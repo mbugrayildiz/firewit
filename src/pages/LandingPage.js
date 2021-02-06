@@ -1,5 +1,6 @@
 import React from 'react'
 import { auth, GithubAuthProvider, GoogleAuthProvider } from '../firebase'
+import '../pages-styles/LandingPage.css'
 import {
   useAuthState
 } from 'react-firebase-hooks/auth'
@@ -34,8 +35,8 @@ const LandingPage = () => {
 
   return loading
     ? <LoadingPage />
-    : <div style={{ textAlign: 'center' }}>
-      <h1 style={{ color: 'tomato' }}>FireWit - Twitter Alternative</h1>
+    : <div className="landingPage">
+      <h1 className="landing-header">FireWit - Twitter Alternative</h1>
       <br />
       <button className="primary" onClick={signInWithGoogle}>
         Sign In with Google

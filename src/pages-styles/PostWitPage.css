@@ -1,0 +1,11 @@
+.post-header, .post-input, .post-form {
+    text-align: center;
+}
+
+.post-input {
+    padding: 7px;
+}
+
+.post-button {
+    padding: 10px;
+}

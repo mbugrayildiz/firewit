@@ -1,0 +1,11 @@
+.landingPage {
+    text-align: center;
+}
+
+.landing-header {
+    color: tomato;
+}
+
+.landingPage button {
+    border-radius: 12px;
+}

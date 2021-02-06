@@ -1,4 +1,5 @@
 import React from 'react'
+import '../pages-styles/PostWitPage.css'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useHistory } from 'react-router-dom'
 import { auth, firestore, serverTimestamp } from '../firebase'
@@ -30,10 +31,10 @@ const PostWitPage = () => {
   }
 
   return <React.Fragment>
-    <h1>Post a Wit!</h1>
-    <form onSubmit={postWit}>
-      <input value={wit} onChange={e => setWit(e.target.value)} />
-      <button type="submit">Post</button>
+    <h1 className="post-header">Post a Wit !</h1>
+    <form className="post-form" onSubmit={postWit}>
+      <input className="post-input" value={wit} onChange={e => setWit(e.target.value)} />
+      <button className="post-button" type="submit">Post</button>
     </form>
   </React.Fragment>
 }
